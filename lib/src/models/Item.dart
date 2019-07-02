@@ -1,7 +1,7 @@
 import 'License.dart';
 import 'Owner.dart';
 
-class Items {
+class Item {
   int id;
   String nodeId;
   String name;
@@ -77,7 +77,7 @@ class Items {
   String defaultBranch;
   double score;
 
-  Items(
+  Item(
       {this.id,
       this.nodeId,
       this.name,
@@ -153,7 +153,7 @@ class Items {
       this.defaultBranch,
       this.score});
 
-  Items.fromJson(Map<String, dynamic> json) {
+  Item.fromJson(Map<String, dynamic> json) {
     id = json['id'];
     nodeId = json['node_id'];
     name = json['name'];

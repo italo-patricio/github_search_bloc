@@ -44,7 +44,7 @@ void dispose() {
     );
   }
 
-  _item(Items item) {
+  _item(Item item) {
     return Container(
       child: ListTile(
         leading: Image.network(item.owner.avatarUrl),
@@ -80,7 +80,7 @@ void dispose() {
                  physics: ClampingScrollPhysics(),
                  itemCount: snapshot.data.items.length,
                  itemBuilder: (BuildContext context, int index){
-                   Items item =  snapshot.data.items[index];
+                   Item item =  snapshot.data.items[index];
                    return _item(item);
                  }, 
                ): Center(child: CircularProgressIndicator(),);

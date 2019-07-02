@@ -3,7 +3,7 @@ import 'Item.dart';
 class SearchResult {
   int totalCount;
   bool incompleteResults;
-  List<Items> items;
+  List<Item> items;
 
   SearchResult({this.totalCount, this.incompleteResults, this.items});
 
@@ -11,9 +11,9 @@ class SearchResult {
     totalCount = json['total_count'];
     incompleteResults = json['incomplete_results'];
     if (json['items'] != null) {
-      items = new List<Items>();
+      items = new List<Item>();
       json['items'].forEach((v) {
-        items.add(new Items.fromJson(v));
+        items.add(new Item.fromJson(v));
       });
     }
   }

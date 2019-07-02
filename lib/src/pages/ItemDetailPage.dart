@@ -3,7 +3,7 @@ import 'package:flutter/widgets.dart';
 import 'package:github_search_bloc/src/models/Item.dart';
 
 class ItemDetailPage extends StatefulWidget {
-  final Items item;
+  final Item item;
 
   ItemDetailPage({this.item});
 
